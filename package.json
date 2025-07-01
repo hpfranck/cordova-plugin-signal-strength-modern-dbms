@@ -1,0 +1,20 @@
+{
+  "name": "cordova-plugin-signal-strength",
+  "version": "1.0.0",
+  "description": "Cordova plugin to get cellular and WiFi signal strength (dBm)",
+  "cordova": {
+    "id": "cordova-plugin-signal-strength",
+    "platforms": ["android"]
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "signal",
+    "strength",
+    "wifi",
+    "cellular",
+    "dbm"
+  ],
+  "author": "Adaptado por ChatGPT + Herbert",
+  "license": "MIT"
+}

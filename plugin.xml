@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="cordova-plugin-signal-strength"
+        version="1.0.0"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>Signal Strength</name>
+    <description>Expose cellular signal strength (dBm) to JS</description>
+    <license>MIT</license>
+    <js-module name="SignalStrength" src="www/SignalStrength.js">
+        <clobbers target="window.SignalStrength" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="SignalStrength">
+                <param name="android-package" value="com.example.signalstrength.SignalStrengthPlugin" />
+            </feature>
+        
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    </config-file>
+
+        <source-file src="src/android/SignalStrengthPlugin.java"
+                     target-dir="src/com/example/signalstrength" />
+
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    </platform>
+</plugin>
