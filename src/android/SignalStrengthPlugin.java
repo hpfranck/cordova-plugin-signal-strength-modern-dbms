@@ -22,6 +22,9 @@ import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 
+import android.net.wifi.WifiManager;
+import android.net.wifi.WifiInfo;
+import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.telephony.CellInfo;
 import android.telephony.CellInfoLte;
