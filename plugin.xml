@@ -17,13 +17,12 @@
                 <param name="android-package" value="com.example.signalstrength.SignalStrengthPlugin" />
             </feature>
         
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     </config-file>
 
-        <source-file src="src/android/SignalStrengthPlugin.java"
-                     target-dir="src/com/example/signalstrength" />
+        <source-file src="src/android/SignalStrengthPlugin.java" target-dir="src/com/example/signalstrength" />
 
         <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     </platform>
 </plugin>
