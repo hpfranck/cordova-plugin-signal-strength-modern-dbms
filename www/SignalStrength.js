@@ -8,3 +8,7 @@ exports.getCellDbm = function(success, error) {
 exports.getWifiDbm = function(success, error) {
     exec(success, error, 'SignalStrength', 'getWifiDbm', []);
 };
+
+exports.getSignalLevel = function(success, error) {
+    exec(success, error, "SignalStrength", "getSignalLevel", []);
+};
